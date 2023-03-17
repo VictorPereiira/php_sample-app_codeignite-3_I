@@ -11,7 +11,6 @@
 	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 		<h2 class="h2">Last 5 Games</h2>
 	</div>
-
 	<div class="table-responsive">
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -39,11 +38,10 @@
 		</table>
 	</div>
 
-	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 		<h2 class="h2">Last 5 Users</h2>
-	</div>
-
-	<div class="table-responsive">
+	</div> -->
+	<!-- <div class="table-responsive">
 		<table class="table table-bordered table-hover">
 			<thead>
 				<tr>
@@ -57,5 +55,5 @@
 				
 			</tbody>
 		</table>
-	</div>
+	</div> -->
 </main>

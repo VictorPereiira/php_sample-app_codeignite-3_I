@@ -35,12 +35,12 @@
               Games
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="">
               <span data-feather="shopping-cart"></span>
               Users
             </a>
-					</li>
+					</li> -->
 					<li class="nav-item">
             <a class="nav-link" href="">
               <span data-feather="shopping-cart"></span>
