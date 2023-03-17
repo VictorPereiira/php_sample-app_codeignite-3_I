@@ -20,7 +20,6 @@
 					<th>Price</th>
 					<th>Developer</th>
 					<th>Release Date</th>
-					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -31,7 +30,6 @@
                         <td><?= $game['price'] ?></td>
                         <td><?= $game['developer'] ?></td>
                         <td><?= $game['release_date'] ?></td>
-                        <td>xxx</td>
                     </tr>
                 <?php endforeach; ?>
 			</tbody>
