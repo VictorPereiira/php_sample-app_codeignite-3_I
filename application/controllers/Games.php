@@ -57,4 +57,11 @@ class Games extends CI_Controller {
         redirect("games");
     }
 
+    public function delete($id)
+    {
+        $this->load->model("games_model");
+        $this->games_model->remove($id);
+        redirect("games");
+    }
+
 }

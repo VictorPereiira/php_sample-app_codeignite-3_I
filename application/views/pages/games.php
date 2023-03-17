@@ -30,6 +30,12 @@
 							<a href="<?= base_url()?>games/edit/<?= $game['id']?>" class="btn btn-sm btn-warning">
 								<i class="fas fa-pencil-alt"></i>
 							</a>
+							<a href="javascript:goDelete(<?= $game['id']?>)" class="btn btn-sm btn-danger">
+								<i class="fas fa-trash-alt"></i>
+							</a>
+							<!-- <a href="<?= base_url()?>games/delete/<?= $game['id']?>" class="btn btn-sm btn-danger">
+								<i class="fas fa-trash-alt"></i>
+							</a> -->
 						</td>
                     </tr>
                 <?php endforeach; ?>
@@ -37,3 +43,14 @@
 		</table>
 	</div>
 </main>
+
+
+<script>
+	function goDelete(id) {
+		let myUrl = `games/delete/${id}`;
+
+		if(confirm(`Remove Game: ${id} ???`)) {
+			window.location.href = myUrl;
+		} 
+	}
+</script>
