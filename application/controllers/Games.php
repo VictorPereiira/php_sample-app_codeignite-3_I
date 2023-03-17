@@ -35,4 +35,26 @@ class Games extends CI_Controller {
         $this->games_model->store($game);
         redirect("dashboard");
 	}
+
+    public function edit($id)
+	{
+        $this->load->model("games_model");
+        $data['title'] = "Games";
+        $data['game'] = $this->games_model->show($id);
+
+		$this->load->view('templates/header', $data);
+        $this->load->view('templates/nav-top', $data);
+		$this->load->view('pages/form-games', $data);
+        $this->load->view('templates/footer', $data);
+        $this->load->view('templates/js', $data);
+	}
+
+    public function update($id)
+    {
+        $game = $_POST;
+        $this->load->model("games_model");
+        $this->games_model->update($id, $game);
+        redirect("games");
+    }
+
 }
